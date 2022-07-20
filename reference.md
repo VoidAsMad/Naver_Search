@@ -1,5 +1,7 @@
 # Reference
-
+* [Naver](https://github.com/VoidAsMad/Naver_Search/edit/main/reference#Naver)
+* [Model](https://github.com/VoidAsMad/Naver_Search/edit/main/reference#Model)
+* [Error](https://github.com/VoidAsMad/Naver_Search/edit/main/reference#Error)
 ## Naver
 ```py
 class Search(Client_ID : str, Client_Secret : str):
@@ -51,3 +53,40 @@ search_adult(text : str) -> bool:
 search_errata(text : str) -> dict:
 ```
 > 오타가 있는지 없는지 검사를 진행합니다.
+
+## Model
+```py
+class NaverBasic
+```
+검색을 했을시 기초적으로 바탕이 되는 클래스입니다.
+#### - func
+```py
+basic(number : int = None)
+```
+> `dict`형태로 반환합니다.(번째 해당 검색어 정보)
+[출력예제보기](https://naversearch.voidasmad.repl.co/basic)<br/>
+**단 `NaverImage`는 지원하지 않습니다.**
+
+```py
+url(number : int = None)
+```
+> `link`형태로 반환합니다.(해당 검색어 링크)
+```py
+json()
+```
+> `dict`형태로 반환합니다.(모든 해당 검색어 정보)
+> [출력예제보기](https://naversearch.voidasmad.repl.co/basic)<br/>
+
+## Error
+```py
+class ConverError(Exception)
+```
+API 응답코드가 200이 아닐시 발생하는 오류입니다.
+```py
+class NaverBasicError(Exception)
+```
+`.basic(number : int = None)`에서 `number` 파라미터가 일정 범위 넘게 입력할 시 나타나는 오류입니다.
+```py
+class NaverLinkError(Exception)
+```
+`.url(number : int = None)`에서 `number` 파라미터가 일정 범위 넘게 입력할 시 나타나는 오류입니다.
