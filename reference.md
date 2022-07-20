@@ -1,7 +1,7 @@
 # Reference
 * [Naver](https://github.com/VoidAsMad/Naver_Search/edit/main/reference#Naver)
 * [Model](https://github.com/VoidAsMad/Naver_Search/edit/main/reference#Model)
-* [Error](https://github.com/VoidAsMad/Naver_Search/edit/main/reference#Error)
+* [Exception](https://github.com/VoidAsMad/Naver_Search/edit/main/reference#Error)
 ## Naver
 ```py
 class Search(Client_ID : str, Client_Secret : str):
@@ -77,7 +77,7 @@ json()
 > `dict`형태로 반환합니다.(모든 해당 검색어 정보)
 > [출력예제보기](https://naversearch.voidasmad.repl.co/basic)<br/>
 
-## Error
+## Exception
 ```py
 class ConverError(Exception)
 ```
