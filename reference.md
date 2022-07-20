@@ -75,7 +75,7 @@ url(number : int = None)
 json()
 ```
 > `dict`형태로 반환합니다.(모든 해당 검색어 정보)
-> [출력예제보기](https://naversearch.voidasmad.repl.co/basic)<br/>
+> [출력예제보기](https://naversearch.voidasmad.repl.co/json)<br/>
 
 ## Exception
 ```py
