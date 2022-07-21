@@ -85,8 +85,8 @@ API 응답코드가 200이 아닐시 발생하는 오류입니다.
 ```py
 class NaverBasicError(Exception)
 ```
-`.basic(number : int = None)`에서 `number` 파라미터가 일정 범위 넘게 입력할 시 나타나는 오류입니다.
+`.basic(number : int = None)`에서 `number` 파라미터에 일정 범위 넘게 입력할 시 나타나는 오류입니다.
 ```py
 class NaverLinkError(Exception)
 ```
-`.url(number : int = None)`에서 `number` 파라미터가 일정 범위 넘게 입력할 시 나타나는 오류입니다.
+`.url(number : int = None)`에서 `number` 파라미터에 일정 범위 넘게 입력할 시 나타나는 오류입니다.
