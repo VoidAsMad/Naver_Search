@@ -1,7 +1,7 @@
 # Reference
-* [Naver](https://github.com/VoidAsMad/Naver_Search/edit/main/reference#Naver)
-* [Model](https://github.com/VoidAsMad/Naver_Search/edit/main/reference#Model)
-* [Exception](https://github.com/VoidAsMad/Naver_Search/edit/main/reference#Error)
+* [Naver](https://github.com/VoidAsMad/Naver_Search/blob/main/reference.md#naver)
+* [Model](https://github.com/VoidAsMad/Naver_Search/blob/main/reference.md#model)
+* [Exception](https://github.com/VoidAsMad/Naver_Search/blob/main/reference.md#exception)
 ## Naver
 ```py
 class Search(Client_ID : str, Client_Secret : str):
