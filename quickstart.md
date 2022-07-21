@@ -5,7 +5,7 @@
 from naver_search import Search
 
 #로그인 진행
-naver = Search(Client_ID = "Client_ID", Client_Secret = 'wsxdNJhbsM
+naver = Search(Client_ID = "Client_ID", Client_Secret = 'Client_Secret')
 result = naver.search_image(text = '너구리').url()
 
 print(result)
